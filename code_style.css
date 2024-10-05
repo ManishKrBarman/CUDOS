@@ -219,10 +219,6 @@ code {
     50% {
         border-color: wheat;
     }
-
-    100% {
-        border-color: transparent;
-    }
 }
 
 @media (max-width: 900px) {
