@@ -34,8 +34,7 @@ nav {
     font-family: "Pacifico", cursive;
     color: rgb(3, 3, 3);
     background-color: rgba(224, 130, 36, 0.896);
-    box-shadow: 0 4px 8px rgba(253, 71, 5, 0.921), 0 6px 20px rgba(255, 162, 2, 0.866);
-
+    /* box-shadow: 0 4px 8px rgba(253, 71, 5, 0.921), 0 6px 20px rgba(255, 162, 2, 0.866); */
 }
 
 nav:hover {
