@@ -189,7 +189,7 @@ code {
     padding: 10px;
     border-right: 3px solid rgba(255, 255, 255, 0.75);
     display: inline-block;
-    width: auto;
+    max-width: 100%;
     white-space: nowrap;
     overflow: hidden;
     position: relative;
