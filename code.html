@@ -47,52 +47,72 @@
                 </code>
             </div>
             <div class="code-item">
-                <p class="question">Q2. Find the factorial of a number</p>
+                <p class="question">Q2. Convert temperature from Celsius to Fahrenheit or vice versa</p>
                 <code>
                     #include &lt;stdio.h&gt;<br>
                     int main() {<br>
-                    int n, i, factorial = 1;<br>
-                    printf("Enter a number: ");<br>
-                    scanf("%d", &n);<br>
-                    for (i = 1; i <= n; i++) {<br>
-                    factorial *= i;<br>
-                    }<br>
-                    printf("Factorial of %d is: %d", n, factorial);<br>
+                    <br>
+                    <p class="comment">
+                        // FAHRENHEIT TO CELSIUS<br>
+                    </p>
+                        float F, C;<br>
+                    printf("Enter temperatuer in Fahrenheit: ");<br>
+                    scanf("%f", &F);<br>
+                    C = (F - 32) * 5 / 9;<br>
+                    printf("%f deg Fahrenheit into Celsius is: %f\n", F, C);<br>
+                    <br>
+                    <p class="comment">
+                        // CELSIUS TO FAHRENHEIT<br>
+                    </p>
+                    printf("Enter temperatuer in Celsius: ");
+                    scanf("%f", &C);<br>
+                    F = ((C * 9) / 5) + 32;<br>
+                    printf("%f deg Celsius into Fahrenheit is: %f", C, F);<br>
                     return 0;<br>
-                    }<br>
+                    }
                 </code>
             </div>
             <div class="code-item">
-                <p class="question">Q3. Find the sum of digits of a number</p>
+                <p class="question">Q3. Swap two numbers without using third variable</p>
                 <code>
                     #include &lt;stdio.h&gt;<br>
                     int main() {<br>
-                    int n, sum = 0;<br>
-                    printf("Enter a number: ");<br>
-                    scanf("%d", &n);<br>
-                    while (n != 0) {<br>
-                    sum += n % 10;<br>
-                    n = n / 10;<br>
-                    }<br>
-                    printf("Sum of digits of %d is: %d", n, sum);<br>
+                    int x, y;<br>
+                    printf("Enter value of X: ");<br>
+                    scanf("%d", &x);<br>
+                    printf("Enter value of Y: ");<br>
+                    scanf("%d", &y);<br>
+                    printf("Before Swaping:\n X = %d\n Y = %d\n", x, y);<br>
+                    x = x + y;<br>
+                    y = x - y;<br>
+                    x = x - y;<br>
+                    printf("After Swaping:\n X = %d\n Y = %d", x, y);<br>
                     return 0;<br>
-                    }<br>
+                    }
                 </code>
             </div>
             <div class="code-item">
-                <p class="question">Q4. Find the reverse of a number</p>
+                <p class="question">Q4. Find greatest integer among 3 numbers</p>
                 <code>
                     #include &lt;stdio.h&gt;<br>
                     int main() {<br>
-                    int n, reverse = 0;<br>
-                    printf("Enter a number: ");<br>
-                    scanf("%d", &n);<br>
-                    while (n != 0) {<br>
-                    reverse = reverse * 10 + n % 10;<br>
-                    n = n / 10;<br>
+                    int a, b, c;<br>
+                    printf("Enter value of A: ");<br>
+                    scanf("%d", &a);<br>
+                    printf("Enter value of B: ");<br>
+                    scanf("%d", &b);<br>
+                    printf("Enter value of C: ");<br>
+                    scanf("%d", &c);<br>
+                    if (a > b) {<br>
+                    if (a > c) {<br>
+                    printf("A is greatest");<br>
                     }<br>
-                    printf("Reverse of %d is: %d", n, reverse);<br>
-                    return 0;<br>
+                    else {<br>
+                    printf("C is greatest");<br>
+                    }<br>
+                    }<br>
+                    else if (b > c) {<br>
+                    printf("B is greatest");<br>
                     }<br>
                 </code>
             </div>
