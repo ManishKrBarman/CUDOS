@@ -20,6 +20,10 @@ body {
     font-family: "Roboto Slab", serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 nav {
     display: flex;
     position: sticky;
