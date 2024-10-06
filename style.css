@@ -198,6 +198,8 @@ video {
 
 .footer {
     display: flex;
+    position: relative;
+    bottom: 0;
     color: white;
     background-color: #43396c;
     height: 5vh;
