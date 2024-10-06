@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color: rgb(4, 4, 4);
+    background-color: #1f1d27;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -32,15 +32,14 @@ nav {
     border-radius: 0 0 30px 30px;
     font-size: 1rem;
     font-family: "Pacifico", cursive;
-    color: rgb(3, 3, 3);
-    background-color: rgba(224, 130, 36, 0.896);
-    /* box-shadow: 0 4px 8px rgba(253, 71, 5, 0.921), 0 6px 20px rgba(255, 162, 2, 0.866); */
+    color: rgb(255, 255, 255);
+    background-color: #594b96;
 }
 
 nav:hover {
     color: rgb(251, 249, 248);
-    background-color: rgba(0, 0, 0, 0.985);
-    box-shadow: 0 4px 8px rgba(253, 241, 5, 0.921), 0 6px 20px rgba(248, 10, 10, 0.985);
+    background-color: #1f1d27;
+    box-shadow: 0 4px 8px #9d8de5, 0 6px 20px #5d3ee5;
 }
 
 h1 {
@@ -55,7 +54,6 @@ h1 {
     margin-left: 10px;
     padding: 2px 5px 2px 5px;
     font-family: "Baloo Da 2", sans-serif;
-    /* font-weight: 100; */
     font-size: smaller;
 }
 
@@ -72,8 +70,18 @@ h1 {
 
 .navigation>a:hover {
     color: rgb(255, 255, 255);
-    box-shadow: 0 4px 8px rgba(253, 241, 5, 0.921), 0 6px 20px rgba(248, 10, 10, 0.985);
+    box-shadow: 0 4px 8px #9d8de5, 0 6px 20px #5d3ee5;
     transform: translateY(-2px);
+}
+
+.container {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    padding: 10px;
 }
 
 .setting {
@@ -107,66 +115,96 @@ h1 {
     }
 }
 
-.container {
-    margin: 20px;
+.main {
+    max-width: 100vw;
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
-    max-width: 100%;
-    padding: 10px;
-}
-
-.code-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-auto-rows: auto;
-    grid-auto-flow: dense;
-    gap: 20px;
-    width: 100%;
-    padding: 10px;
-}
-
-.code-item {
-    color: aliceblue;
-    background-color: rgb(0, 0, 0);
-    padding: 15px;
-    height: fit-content;
-    margin: 20px auto;
-    font-size: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(253, 71, 5, 0.921), 0 6px 20px rgba(80, 222, 233, 0.384);
-    transition: transform 0.2s;
-}
-
-.code-item:hover {
-    box-shadow: 0 4px 8px rgba(253, 241, 5, 0.921), 0 6px 20px rgba(248, 10, 10, 0.985);
-    transform: translateY(-2px);
-    cursor: crosshair;
-}
-
-.question {
-    color: rgb(112, 69, 4);
-    background-color: rgb(248, 214, 64);
-    padding: 10px;
-    height: fit-content;
-    margin-bottom: 20px;
-    font-family: "Edu AU VIC WA NT Guides", cursive;
-    font-size: 1rem;
-    font-weight: bolder;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(253, 241, 5, 0.921), 0 6px 20px rgba(80, 222, 233, 0.384);
-    text-align: justify;
-}
-
-code {
-    display: contents;
-    margin-top: 10px;
+    justify-content: center;
     color: white;
-    padding: 15px;
-    font-size: 1rem;
+    font-size: larger;
+    font-weight: bolder;
+    font-family: "Baloo Da 2", cursive;
 }
 
+p {
+    color: white;
+    text-align: justify;
+    font-weight: bolder;
+    margin: 10px auto;
+    padding: 10px;
+    max-width: 50%;
+}
+
+.con1 {
+    display: flex;
+    margin: 5px;
+    padding: 5% 10%;
+    gap: 50px;
+    justify-items: center;
+    align-items: center;
+}
+
+.con2 {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 20px;
+    padding: 10px;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+
+    p {
+        color: #62ffdd;
+    }
+}
+
+.con3 {
+    display: flex;
+    margin: 40px 20px;
+    padding: 10px;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+
+    p {
+        color: #8dcd03eb;
+    }
+}
+
+img {
+    width: 35%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px #9d8de5, 0 6px 20px #5d3ee5;
+}
+
+.con3 img {
+    width: 40%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px #a7f935, 0 6px 20px #7ee53e;
+}
+
+video {
+    width: 50%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px #5ef6d0, 0 6px 20px #119a7c;
+}
+
+.coder {
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px #9d8de5, 0 6px 20px #5d3ee5;
+}
+
+.footer {
+    display: flex;
+    color: white;
+    background-color: #43396c;
+    height: 5vh;
+    padding: 1px;
+    align-items: center;
+    box-shadow: 0 4px 8px #110254, 0 6px 20px #826ce7;
+}
 
 .introduce {
     color: rgb(243, 243, 243);
@@ -184,7 +222,6 @@ code {
     animation:
         typing 4s steps(40, end),
         blink-caret 0.75s step-end infinite;
-    /* slide-up 5s linear 1 ; */
 }
 
 @keyframes typing {
@@ -220,13 +257,35 @@ code {
 
     }
 
-    .question {
-        font-size: 0.9rem;
-        padding: 8px;
+    p {
+        font-size: 0.7rem;
+        max-width: 95%;
     }
 
-    .code-grid {
-        grid-template-columns: 1fr;
+    .con1 {
+        flex-direction: column-reverse;
+    }
+
+    .con2 {
+        /* flex-direction: column; */
+        margin: 5%;
+        padding: 5% 5%;
+    }
+
+    img {
+        width: 95%;
+    }
+
+    video {
+        width: 50%;
+        border-radius: 10px;
+    }
+
+    .coder {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+        box-shadow: none;
+        margin-bottom: 0;
     }
 
     .introduce {
@@ -234,6 +293,10 @@ code {
         white-space: nowrap;
         overflow: hidden;
         width: 90vw;
+    }
+
+    .footer {
+        display: none;
     }
 }
 
@@ -257,14 +320,35 @@ code {
         width: 1.5rem;
     }
 
-    .question {
-        font-size: 0.8rem;
-        padding: 6px;
+    p {
+        font-size: 0.7rem;
+        max-width: 95%;
     }
 
-    code {
-        font-size: 0.8rem;
-        padding: 8px;
+    .con1 {
+        flex-direction: column-reverse;
+    }
+
+    .con2 {
+        /* flex-direction: column; */
+        margin: 5%;
+        padding: 5% 5%;
+    }
+
+    img {
+        width: 95%;
+    }
+
+    video {
+        width: 50%;
+        border-radius: 10px;
+    }
+
+    .coder {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+        box-shadow: none;
+        margin-bottom: 0;
     }
 
     .introduce {
@@ -272,5 +356,9 @@ code {
         white-space: nowrap;
         overflow: hidden;
         width: 100vw;
+    }
+
+    .footer {
+        display: none;
     }
 }
