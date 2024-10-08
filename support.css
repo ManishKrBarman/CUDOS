@@ -238,7 +238,6 @@ h1 {
 .item-app {
     display: flex;
     flex-direction: column;
-    background-color: #1d1d1d;
     margin: 20px auto;
     margin-top: 5%;
     border-radius: 10px;
