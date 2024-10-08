@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(4, 4, 4);
+    color: white;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    p {
+        font-size: 90px;
+        font-family: "Pacifico", cursive;
+        color: white;
+        text-align: center;
+        transform: translate(-50%, -50%);
+    }
+}
