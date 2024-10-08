@@ -204,12 +204,17 @@ img {
     }
 
     .topic-grid {
-        flex-direction: column;
-        /* width: 90vw; */
+        flex-direction: row;
+        width: 50vw;
     }
 
     .topic {
         width: 50%;
+        margin: 10px;
+    }
+
+    .topic a {
+        width: 100%;
     }
 
     .introduce {
@@ -220,7 +225,7 @@ img {
     }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 480px) {
     nav {
         padding: 2px 10px;
         font-size: 0.8rem;
@@ -236,12 +241,23 @@ img {
         padding: 6px;
     }
 
-    img {
-        max-width: 10%;
-    }
-
     .setting {
         width: 1.5rem;
+    }
+
+    .topic-grid {
+        flex-direction: column;
+        width: 50vw;
+        align-items: center;
+    }
+
+    .topic {
+        width: 50%;
+        margin: 20px;
+    }
+
+    .topic a {
+        width: 100%;
     }
 
     .introduce {
