@@ -199,7 +199,7 @@ video {
 .footer {
     width: 100vw;
     display: flex;
-    position: static;
+    position: fixed;
     bottom: 0;
     color: white;
     background-color: #43396c;
